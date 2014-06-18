@@ -22,7 +22,6 @@ function setDefaultMenuDisplayState(bodyState) {
 	if(bodyState === 'clickable' && menu.hasClass('displayMenu')) {
 		menu.removeClass('displayMenu');
 		body.removeClass('defaultCursor');
-		//enableEnterKey(); 
 	}
 	else if(bodyState === 'unclickable' ){
 		menu.addClass('displayMenu');

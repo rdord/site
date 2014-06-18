@@ -4,7 +4,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
 // endbower
 
-$gray: #f5f5f5; /* #eee */
+$gray: #f5f5f5;
 $yellow: #d2a951;
 $green: #637660;
 $blue: #2a6496;
@@ -20,8 +20,8 @@ $sec-base-menu-bgc: $darkyellow;
 $sec-alt-menu-bgc: $darkergreen;
 
 $base-font: 'Six Caps', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-/*$alt-font: 'Varela Round', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-*/
+$alt-font: 'Varela Round', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -29,7 +29,6 @@ $base-font: 'Six Caps', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetic
     padding: 0.2em 0;
 }
 
-/* anti-FOUT classes (webfontloader) */
 .wf-loading {
     .menu__item, .main h1 {
         visibility: hidden;
@@ -48,26 +47,12 @@ html{
 }
 
 body { 
-   /* font-size:62.5%; */
    font-size:10px;
    position:absolute;
    height:100%;
    width:100%;
    overflow: hidden;
 }
-
-/*
-.menu {
-    display: block;
-    position:absolute;
-    height:auto;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background-color: gray;
-}
-*/
 
 .main {
     display: none;
@@ -146,15 +131,6 @@ body {
     text-transform: uppercase;
 }
 
-/* not working 
-.clickable .menu {
-    display: none;
-}
-
-.unclickable .menu {
-    display: block;   
-}*/
-
 .clickable.defaultCursor {
     cursor: default;
 }
@@ -162,9 +138,6 @@ body {
 .clickable .menu.displayMenu{
     display: block;
 }
-
-
-
 
 /* Responsive (mobile first) */
 @media screen and (min-width: 320px) {
@@ -227,13 +200,8 @@ body {
           background: url(../images/menu3.png) no-repeat bottom left;
         }
         
-        .menu__item-wrap:focus {
-
-        }
-        
         .main {
             display: block;
-            
             position: absolute;
             top: 0; 
             left: 0; 
@@ -243,13 +211,12 @@ body {
             width: 111px;
             overflow: hidden;
             margin: auto;
-            padding:18px 0 0 12px; /*5px*/
+            padding:18px 0 0 12px; 
             color: $primary;
         }
 
         .main:hover {
             color: #000000;
-            
         }
 
         .main__heading {
@@ -270,29 +237,6 @@ body {
             cursor: none;
             visibility: visible;
         }
-/*
-        .main__heading:before, .main__heading:after {
-            content: attr(title);
-            color: red;
-            position: absolute;
-
-            border:1px solid red;
-            width: 100px;
-        }
-
-        .main__heading:before { 
-            top: 1px; 
-            left: 1px;
-        }
-
-        .main__heading:after { 
-            top:4px; 
-            left: 4px;
-        } 
-
-        .main__heading:hover:before, .main__heading:hover:after {
-            content: "";
-        } */
     }
 }
 
