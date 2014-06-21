@@ -54,6 +54,13 @@ function mouseClickMenu() {
 		$('.unclickable').off('click');
 	}
 
+function preloadImage(imageLocation) {
+	var img = new Image();
+	img.src = imageLocation;
+}
+
+preloadImage('../images/menu3.png');
+
 debounceWindowResize(function() {
 	var windowWidth = $(window).width(),
 			bodyState = markWindowSize(windowWidth);
