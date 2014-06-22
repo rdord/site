@@ -61,13 +61,22 @@ function preloadImage(imageLocation) {
 
 preloadImage('../images/menu3.png');
 
-debounceWindowResize(function() {
-	var windowWidth = $(window).width(),
-			bodyState = markWindowSize(windowWidth);
+document.onreadystatechange = function() {
+    if (document.readyState === 'complete') {
 
-	setDefaultMenuDisplayState(bodyState);
-	mouseClickMenu();
-})();
+        debounceWindowResize(function() {
+					var windowWidth = $(window).width(),
+							bodyState = markWindowSize(windowWidth);
+
+					setDefaultMenuDisplayState(bodyState);
+					mouseClickMenu();
+				})();
+    }
+};
+
+
+
+
 
 
 
