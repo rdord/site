@@ -20,7 +20,6 @@ $sec-base-menu-bgc: $darkyellow;
 $sec-alt-menu-bgc: $darkergreen;
 
 $base-font: 'Six Caps', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-$alt-font: 'Varela Round', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
 
 .browsehappy {
     margin: 0.2em 0;
@@ -119,13 +118,13 @@ body {
 .menu__item {
     text-align:center;
     width:100%;
-    display:table;
     margin: auto;
     position: absolute;
-    top: 0; 
-    left: 0; 
-    bottom: 0; 
-    right: 0;
+    top: 50%; 
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
     font-size: 4em;
     text-decoration: none;
     text-transform: uppercase;
