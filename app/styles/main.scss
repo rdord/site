@@ -139,25 +139,25 @@ body {
 }
 
 /* Responsive (mobile first) */
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 20em) {
     .menu__item {
         font-size: 5em;
     }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 30em) {
     .menu__item {
         font-size: 6em;
     }
 }
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 36em) {
     .menu__item {
         font-size: 7em;
     }
 }
 
-@media screen and (min-width: 958px) {
+@media screen and (min-width: 60em) {
 
     .js {
         body {
